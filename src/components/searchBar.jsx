@@ -13,14 +13,14 @@ function SearchBar(){
     }
 
     return (
-        <div className="text-white m-3">
+        <div className="text-white m-3 w-full">
 
             <input 
                 type="text"
                 value={search}
                 onChange={(e) => {setSearch(e.target.value)}}
                 placeholder="Search cities"
-                className="w-8/12 m-3 px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition duration-300"
+                className="lg:w-8/12 w-5/12 m-3 px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition duration-300"
             />
 
             <button 
