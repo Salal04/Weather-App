@@ -59,7 +59,7 @@ function MainBody(){
         <div className=" lg:col-span-4 order-last lg:row-span-6 lg:overflow-y-scroll lg:order-none">
            {futureData ? (<FutureDaysData w={futureData}/> ):(<p>Location Problem</p>) }
         </div>
-        <div className=" lg:col-span-8 lg:row-span-3  rounded-4xl mx-3 p-2 ">
+        <div className=" lg:col-span-8 lg:row-span-3 ">
             {dailyData ?(<DailyWeather data = {dailyData}/>):(<p>Network Issue</p>)}
         </div>
 
