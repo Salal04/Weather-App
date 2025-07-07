@@ -39,7 +39,7 @@ function MainBody(){
     return (
 
 
-    <div className="lg:h-screen box-border flex flex-col lg:grid grid-cols-1 lg:grid-cols-12 lg:grid-rows-7 gap-1 sm:grid-cols-4">
+    <div className="lg:h-screen box-border flex flex-col lg:grid grid-cols-1 lg:grid-cols-12 lg:grid-rows-7">
 
         <div className="lg:col-span-12 lg:row-start-1 flex  ">
             <div className="lg:w-4/6 w-full">
@@ -59,7 +59,7 @@ function MainBody(){
         <div className=" lg:col-span-4 order-last lg:row-span-6 lg:overflow-y-scroll lg:order-none">
            {futureData ? (<FutureDaysData w={futureData}/> ):(<p>Location Problem</p>) }
         </div>
-        <div className=" lg:col-span-8 lg:row-span-3 ">
+        <div className=" lg:col-span-8 lg:row-span-3">
             {dailyData ?(<DailyWeather data = {dailyData}/>):(<p>Network Issue</p>)}
         </div>
 
